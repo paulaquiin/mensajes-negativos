@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes Negativos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Assuming SCSS compilation outputs here, or handled by a bundler if present. Since no bundler config in root, will write SCSS but reference CSS to be standard. Wait, user said SCSS. I will write SCSS but browsers need CSS. I'll assume a build process or just write SCSS and let the user handle compilation, OR I can try to compile it if I have tools. The prompt says "Tech stack: JS, scss, HTML". I will write SCSS in styles/main.scss. I will link main.css here and assume standard compilation. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="app-header">
+        <div class="logo">
+            <i class="fa-solid fa-bolt"></i>
+            <h1>Mensajes Negativos</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="about.html" class="nav-link">Sobre Nosotros</a>
+            <a href="contact.html" class="nav-link">Contacto</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="add-message-section">
+            <h2>Añade tu propia desgracia</h2>
+            <form id="custom-message-form">
+                <div class="input-group">
+                    <input type="text" id="custom-text" placeholder="Escribe aquí tu pensamiento negativo..." required
+                        maxlength="100">
+                    <div class="category-wrapper">
+                        <select id="custom-category">
+                            <option value="" disabled selected>Selecciona una categoría...</option>
+                            <option value="trabajo">Trabajo</option>
+                            <option value="amor">Amor</option>
+                            <option value="familia">Familia</option>
+                            <option value="amistad">Amistad</option>
+                            <option value="dinero">Dinero</option>
+                            <option value="salud">Salud</option>
+                            <option value="futuro">Futuro</option>
+                            <option value="tecnología">Tecnología</option>
+                            <option value="otro">Otro</option>
+                        </select>
+
+                    </div>
+                    <button type="submit"><i class="fa-solid fa-plus"></i> Añadir</button>
+                </div>
+                <div id="selected-categories" class="selected-categories"></div>
+            </form>
+        </section>
+
+        <section class="filters">
+            <button class="filter-btn active" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="trabajo">Trabajo</button>
+            <button class="filter-btn" data-category="amistad">Amistad</button>
+            <button class="filter-btn" data-category="familia">Familia</button>
+            <button class="filter-btn" data-category="amor">Amor</button>
+            <button class="filter-btn" data-category="dinero">Dinero</button>
+            <button class="filter-btn" data-category="salud">Salud</button>
+            <button class="filter-btn" data-category="futuro">Futuro</button>
+            <button class="filter-btn" data-category="tecnología">Tecnología</button>
+            <button class="filter-btn" data-category="custom">Mis Mensajes</button>
+            <button class="filter-btn" data-category="favorites">Favoritos <i class="fa-solid fa-heart"></i></button>
+        </section>
+
+        <section id="messages-grid" class="messages-grid">
+            <!-- Messages will be injected here via JS -->
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 Mensajes Negativos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Edit Modal -->
+    <dialog id="edit-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Editar Mensaje</h3>
+                <button class="close-modal-btn" onclick="closeEditModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <textarea id="edit-message-input" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel" onclick="closeEditModal()">Cancelar</button>
+                <button class="btn-save" onclick="saveEditMessage()">Guardar Cambios</button>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Bulk Actions Bar -->
+    <div id="bulk-actions-bar" class="bulk-actions-bar">
+        <div class="selection-count">
+            <span id="selected-count">0</span> seleccionados
+        </div>
+        <div class="bulk-actions">
+            <button class="bulk-btn btn-fav" onclick="bulkFavorite()" title="Añadir selección a favoritos">
+                <i class="fa-regular fa-heart"></i> Favoritos
+            </button>
+            <button class="bulk-btn btn-delete" onclick="bulkDelete()" title="Borrar selección (solo personalizados)">
+                <i class="fa-solid fa-trash"></i> Borrar
+            </button>
+            <button class="bulk-btn btn-clear" onclick="clearSelection()" title="Cancelar selección">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1002 @@
+[
+    {
+        "id": 1,
+        "text": "Tu código no compila y no sabes por qué.",
+        "category": "trabajo"
+    },
+    {
+        "id": 2,
+        "text": "Esa reunión podría haber sido un email.",
+        "category": "trabajo"
+    },
+    {
+        "id": 3,
+        "text": "Visto: Ayer a las 23:45.",
+        "category": "amor"
+    },
+    {
+        "id": 4,
+        "text": "Solo te escribe cuando necesita algo.",
+        "category": "amistad"
+    },
+    {
+        "id": 5,
+        "text": "¿Y para cuándo la novia/o?",
+        "category": "familia"
+    },
+    {
+        "id": 6,
+        "text": "El cliente quiere cambiar todo el diseño.",
+        "category": "trabajo"
+    },
+    {
+        "id": 7,
+        "text": "No eres tú, soy yo.",
+        "category": "amor"
+    },
+    {
+        "id": 8,
+        "text": "Se acabó el café.",
+        "category": "trabajo"
+    },
+    {
+        "id": 9,
+        "text": "Tu primo ya se compró casa y coche.",
+        "category": "familia"
+    },
+    {
+        "id": 10,
+        "text": "Salimos de tranquis (llegaste a las 6am).",
+        "category": "amistad"
+    },
+    {
+        "id": 11,
+        "text": "Tenemos que hablar.",
+        "category": "amor"
+    },
+    {
+        "id": 12,
+        "text": "Error 500: Internal Server Error",
+        "category": "trabajo"
+    },
+    {
+        "id": 13,
+        "text": "El WiFi se ha caído justo antes de guardar.",
+        "category": "tecnología"
+    },
+    {
+        "id": 14,
+        "text": "Te dejaron en 'leído'.",
+        "category": "amor"
+    },
+    {
+        "id": 15,
+        "text": "Tu amigo 'olvidó' la cartera otra vez.",
+        "category": "amistad"
+    },
+    {
+        "id": 16,
+        "text": "¿Y cuándo nos vas a dar nietos?",
+        "category": "familia"
+    },
+    {
+        "id": 17,
+        "text": "El deadline es para ayer.",
+        "category": "trabajo"
+    },
+    {
+        "id": 18,
+        "text": "Creo que deberíamos darnos un tiempo.",
+        "category": "amor"
+    },
+    {
+        "id": 19,
+        "text": "Se te ha pegado el arroz.",
+        "category": "familia"
+    },
+    {
+        "id": 20,
+        "text": "Ese 'amigo' ha subido fotos de la fiesta a la que no te invitó.",
+        "category": "amistad"
+    },
+    {
+        "id": 21,
+        "text": "El servidor de producción se ha caído el viernes a las 18:00.",
+        "category": "trabajo"
+    },
+    {
+        "id": 22,
+        "text": "Te ha bloqueado en todas las redes sociales.",
+        "category": "amor"
+    },
+    {
+        "id": 23,
+        "text": "Tu madre te llama por tu nombre completo.",
+        "category": "familia"
+    },
+    {
+        "id": 24,
+        "text": "Te invitan a una boda... que tienes que pagar tú.",
+        "category": "dinero"
+    },
+    {
+        "id": 25,
+        "text": "El jefe te ha mandado una solicitud de amistad.",
+        "category": "trabajo"
+    },
+    {
+        "id": 26,
+        "text": "Ha vuelto con su ex.",
+        "category": "amor"
+    },
+    {
+        "id": 27,
+        "text": "En mis tiempos esto era todo campo.",
+        "category": "familia"
+    },
+    {
+        "id": 28,
+        "text": "Te han dejado plantado en el cine.",
+        "category": "amistad"
+    },
+    {
+        "id": 29,
+        "text": "Lunes por la mañana y el metro está averiado.",
+        "category": "trabajo"
+    },
+    {
+        "id": 30,
+        "text": "Te dice 'te quiero' pero como amigo.",
+        "category": "amor"
+    },
+    {
+        "id": 31,
+        "text": "Tu tía te pellizca los cachetes delante de tu pareja.",
+        "category": "familia"
+    },
+    {
+        "id": 32,
+        "text": "Te piden que les ayudes con la mudanza... un domingo a las 8am.",
+        "category": "amistad"
+    },
+    {
+        "id": 33,
+        "text": "Se ha borrado la base de datos de producción.",
+        "category": "trabajo"
+    },
+    {
+        "id": 34,
+        "text": "Te ha dejado por WhatsApp.",
+        "category": "amor"
+    },
+    {
+        "id": 35,
+        "text": "Tu hermano es el favorito y lo sabes.",
+        "category": "familia"
+    },
+    {
+        "id": 36,
+        "text": "Te deben dinero desde hace 3 años.",
+        "category": "dinero"
+    },
+    {
+        "id": 37,
+        "text": "Reunión de 3 horas sin agenda ni objetivos.",
+        "category": "trabajo"
+    },
+    {
+        "id": 38,
+        "text": "Está 'en línea' pero no contesta al tuyo.",
+        "category": "amor"
+    },
+    {
+        "id": 39,
+        "text": "¿Te vas a comer todo eso?",
+        "category": "salud"
+    },
+    {
+        "id": 40,
+        "text": "Te cuenta el final de la serie que estás viendo.",
+        "category": "amistad"
+    },
+    {
+        "id": 41,
+        "text": "El cliente 'solo tiene unos pequeños cambios' (es una web nueva).",
+        "category": "trabajo"
+    },
+    {
+        "id": 42,
+        "text": "Te ha confundido con su ex.",
+        "category": "amor"
+    },
+    {
+        "id": 43,
+        "text": "Tu abuela te regala calcetines... otra vez.",
+        "category": "familia"
+    },
+    {
+        "id": 44,
+        "text": "Siempre llega tarde y nunca avisa.",
+        "category": "amistad"
+    },
+    {
+        "id": 45,
+        "text": "Tu ordenador se actualiza justo cuando tienes prisa.",
+        "category": "tecnología"
+    },
+    {
+        "id": 46,
+        "text": "Te ha pedido tiempo... indefinido.",
+        "category": "amor"
+    },
+    {
+        "id": 47,
+        "text": "¿Cuándo te vas a cortar el pelo?",
+        "category": "familia"
+    },
+    {
+        "id": 48,
+        "text": "Solo te llama para pedir favores.",
+        "category": "amistad"
+    },
+    {
+        "id": 49,
+        "text": "El café de la oficina sabe a agua sucia.",
+        "category": "trabajo"
+    },
+    {
+        "id": 50,
+        "text": "Te ha dicho que 'mereces algo mejor'.",
+        "category": "amor"
+    },
+    {
+        "id": 51,
+        "text": "Tu padre cuenta tus momentos vergonzosos a las visitas.",
+        "category": "familia"
+    },
+    {
+        "id": 52,
+        "text": "Te ha robado el cargador del móvil.",
+        "category": "tecnología"
+    },
+    {
+        "id": 53,
+        "text": "Te toca trabajar el fin de semana.",
+        "category": "trabajo"
+    },
+    {
+        "id": 54,
+        "text": "Te ha dejado en la 'friendzone'.",
+        "category": "amor"
+    },
+    {
+        "id": 55,
+        "text": "¿Y ese trabajo qué futuro tiene?",
+        "category": "futuro"
+    },
+    {
+        "id": 56,
+        "text": "Te ha cancelado el plan 5 minutos antes.",
+        "category": "amistad"
+    },
+    {
+        "id": 57,
+        "text": "El aire acondicionado de la oficina está a 18 grados.",
+        "category": "salud"
+    },
+    {
+        "id": 58,
+        "text": "Te ha comparado con su ex.",
+        "category": "amor"
+    },
+    {
+        "id": 59,
+        "text": "Cómete las verduras.",
+        "category": "salud"
+    },
+    {
+        "id": 60,
+        "text": "Te ha hecho spoilers de la película.",
+        "category": "amistad"
+    },
+    {
+        "id": 61,
+        "text": "El lunes es festivo... pero trabajas.",
+        "category": "trabajo"
+    },
+    {
+        "id": 62,
+        "text": "Te ha dejado de seguir en Instagram.",
+        "category": "tecnología"
+    },
+    {
+        "id": 63,
+        "text": "¿Esa camisa te la has comprado tú?",
+        "category": "familia"
+    },
+    {
+        "id": 64,
+        "text": "Se ha comido tu comida de la nevera.",
+        "category": "amistad"
+    },
+    {
+        "id": 65,
+        "text": "Tu jefe te pide el informe a las 17:55.",
+        "category": "trabajo"
+    },
+    {
+        "id": 66,
+        "text": "Te ha llamado por el nombre de su ex.",
+        "category": "amor"
+    },
+    {
+        "id": 67,
+        "text": "A tu edad yo ya tenía dos hijos.",
+        "category": "familia"
+    },
+    {
+        "id": 68,
+        "text": "Te ha etiquetado en una foto horrible.",
+        "category": "tecnología"
+    },
+    {
+        "id": 69,
+        "text": "El proyecto se retrasa indefinidamente.",
+        "category": "trabajo"
+    },
+    {
+        "id": 70,
+        "text": "Te ha dicho que 'necesita espacio'.",
+        "category": "amor"
+    },
+    {
+        "id": 71,
+        "text": "¿Por qué no eres como tu primo?",
+        "category": "familia"
+    },
+    {
+        "id": 72,
+        "text": "Te debe una cena desde hace meses.",
+        "category": "dinero"
+    },
+    {
+        "id": 73,
+        "text": "Tu compañero de trabajo masca chicle con la boca abierta.",
+        "category": "trabajo"
+    },
+    {
+        "id": 74,
+        "text": "Te ha dejado plantado en San Valentín.",
+        "category": "amor"
+    },
+    {
+        "id": 75,
+        "text": "¿Sigues soltero/a?",
+        "category": "familia"
+    },
+    {
+        "id": 76,
+        "text": "Te ha pedido prestado el coche y te lo devuelve sin gasolina.",
+        "category": "dinero"
+    },
+    {
+        "id": 77,
+        "text": "El sistema se ha colgado y no has guardado.",
+        "category": "tecnología"
+    },
+    {
+        "id": 78,
+        "text": "Te ha dicho que 'te quiere mucho' (como amigo).",
+        "category": "amor"
+    },
+    {
+        "id": 79,
+        "text": "¿Cuándo vas a sentar la cabeza?",
+        "category": "futuro"
+    },
+    {
+        "id": 80,
+        "text": "Te ha dejado tirado en el aeropuerto.",
+        "category": "amistad"
+    },
+    {
+        "id": 81,
+        "text": "Te han asignado el proyecto que nadie quiere.",
+        "category": "trabajo"
+    },
+    {
+        "id": 82,
+        "text": "Te ha ocultado sus historias de Instagram.",
+        "category": "tecnología"
+    },
+    {
+        "id": 83,
+        "text": "Estás más gordo/a.",
+        "category": "salud"
+    },
+    {
+        "id": 84,
+        "text": "Te ha pedido dinero y no te lo devuelve.",
+        "category": "dinero"
+    },
+    {
+        "id": 85,
+        "text": "Tu silla de oficina rechina.",
+        "category": "trabajo"
+    },
+    {
+        "id": 86,
+        "text": "Te ha dejado por mensaje de texto.",
+        "category": "amor"
+    },
+    {
+        "id": 87,
+        "text": "¿Qué vas a hacer con tu vida?",
+        "category": "futuro"
+    },
+    {
+        "id": 88,
+        "text": "Te ha traicionado por la espalda.",
+        "category": "amistad"
+    },
+    {
+        "id": 89,
+        "text": "El jefe te ha gritado delante de todos.",
+        "category": "trabajo"
+    },
+    {
+        "id": 90,
+        "text": "Te ha sido infiel.",
+        "category": "amor"
+    },
+    {
+        "id": 91,
+        "text": "No te pareces en nada a tu padre.",
+        "category": "familia"
+    },
+    {
+        "id": 92,
+        "text": "Te ha criticado a tus espaldas.",
+        "category": "amistad"
+    },
+    {
+        "id": 93,
+        "text": "Te han denegado las vacaciones.",
+        "category": "trabajo"
+    },
+    {
+        "id": 94,
+        "text": "Te ha mentido sobre su pasado.",
+        "category": "amor"
+    },
+    {
+        "id": 95,
+        "text": "¿Cuándo te vas a independizar?",
+        "category": "dinero"
+    },
+    {
+        "id": 96,
+        "text": "Te ha robado a tu pareja.",
+        "category": "amistad"
+    },
+    {
+        "id": 97,
+        "text": "Te han despedido.",
+        "category": "trabajo"
+    },
+    {
+        "id": 98,
+        "text": "Te ha dejado por tu mejor amigo/a.",
+        "category": "amor"
+    },
+    {
+        "id": 99,
+        "text": "Eres la oveja negra de la familia.",
+        "category": "familia"
+    },
+    {
+        "id": 100,
+        "text": "Te ha dejado de hablar sin motivo.",
+        "category": "amistad"
+    },
+    {
+        "id": 101,
+        "text": "El lunes hay huelga de transporte.",
+        "category": "trabajo"
+    },
+    {
+        "id": 102,
+        "text": "Tu 'crush' ha empezado a salir con otro/a.",
+        "category": "amor"
+    },
+    {
+        "id": 103,
+        "text": "¿Sigues viviendo de alquiler?",
+        "category": "dinero"
+    },
+    {
+        "id": 104,
+        "text": "Te ha copiado el outfit.",
+        "category": "amistad"
+    },
+    {
+        "id": 105,
+        "text": "Te han bajado el sueldo.",
+        "category": "dinero"
+    },
+    {
+        "id": 106,
+        "text": "Te ha pedido el divorcio.",
+        "category": "amor"
+    },
+    {
+        "id": 107,
+        "text": "Tus primos sacan mejores notas que tú.",
+        "category": "familia"
+    },
+    {
+        "id": 108,
+        "text": "Te ha dejado tirado en una fiesta.",
+        "category": "amistad"
+    },
+    {
+        "id": 109,
+        "text": "El cliente no paga.",
+        "category": "dinero"
+    },
+    {
+        "id": 110,
+        "text": "Te ha olvidado tu cumpleaños.",
+        "category": "amor"
+    },
+    {
+        "id": 111,
+        "text": "¿Cuándo vas a terminar la carrera?",
+        "category": "futuro"
+    },
+    {
+        "id": 112,
+        "text": "Te ha usado para conseguir algo.",
+        "category": "amistad"
+    },
+    {
+        "id": 113,
+        "text": "Te han robado el proyecto.",
+        "category": "trabajo"
+    },
+    {
+        "id": 114,
+        "text": "Te ha ghosteado después de la primera cita.",
+        "category": "amor"
+    },
+    {
+        "id": 115,
+        "text": "No te invitan a las cenas familiares.",
+        "category": "familia"
+    },
+    {
+        "id": 116,
+        "text": "Te ha dejado de hablar porque tiene pareja.",
+        "category": "amistad"
+    },
+    {
+        "id": 117,
+        "text": "Te han cambiado de puesto a uno peor.",
+        "category": "trabajo"
+    },
+    {
+        "id": 118,
+        "text": "Te ha dicho que 'no eres su tipo'.",
+        "category": "amor"
+    },
+    {
+        "id": 119,
+        "text": "¿Por qué no te buscas un trabajo de verdad?",
+        "category": "familia"
+    },
+    {
+        "id": 120,
+        "text": "Te ha dejado de lado por 'ser aburrido'.",
+        "category": "amistad"
+    },
+    {
+        "id": 121,
+        "text": "Te han quitado el bono de Navidad.",
+        "category": "dinero"
+    },
+    {
+        "id": 122,
+        "text": "Te ha dicho que 'te quiere solo para un rato'.",
+        "category": "amor"
+    },
+    {
+        "id": 123,
+        "text": "Te pareces a tu tío el solterón.",
+        "category": "familia"
+    },
+    {
+        "id": 124,
+        "text": "Te ha contado tus secretos a todos.",
+        "category": "amistad"
+    },
+    {
+        "id": 125,
+        "text": "Tu jefe te llama en tus vacaciones.",
+        "category": "trabajo"
+    },
+    {
+        "id": 126,
+        "text": "Te ha dicho que 'no quiere nada serio'.",
+        "category": "amor"
+    },
+    {
+        "id": 127,
+        "text": "¿Cuándo te vas a casar?",
+        "category": "futuro"
+    },
+    {
+        "id": 128,
+        "text": "Te ha dejado tirado en el cine.",
+        "category": "amistad"
+    },
+    {
+        "id": 129,
+        "text": "Te han quitado el teletrabajo.",
+        "category": "trabajo"
+    },
+    {
+        "id": 130,
+        "text": "Te ha dicho que 'te ve como un hermano/a'.",
+        "category": "amor"
+    },
+    {
+        "id": 131,
+        "text": "Tus hermanos ya tienen hijos.",
+        "category": "familia"
+    },
+    {
+        "id": 132,
+        "text": "Te ha dejado de hablar sin dar explicación.",
+        "category": "amistad"
+    },
+    {
+        "id": 133,
+        "text": "Te han denegado el aumento.",
+        "category": "dinero"
+    },
+    {
+        "id": 134,
+        "text": "Te ha dicho que 'no eres suficiente'.",
+        "category": "amor"
+    },
+    {
+        "id": 135,
+        "text": "¿Por qué no te compras una casa?",
+        "category": "dinero"
+    },
+    {
+        "id": 136,
+        "text": "Te ha dejado de seguir en todas las redes.",
+        "category": "tecnología"
+    },
+    {
+        "id": 137,
+        "text": "Tu jefe te hace micromanagement.",
+        "category": "trabajo"
+    },
+    {
+        "id": 138,
+        "text": "Te ha dicho que 'no le gustas'.",
+        "category": "amor"
+    },
+    {
+        "id": 139,
+        "text": "¿Cuándo vas a madurar?",
+        "category": "futuro"
+    },
+    {
+        "id": 140,
+        "text": "Te ha dejado de invitar a planes.",
+        "category": "amistad"
+    },
+    {
+        "id": 141,
+        "text": "Te han puesto una reunión a las 9 am los lunes.",
+        "category": "trabajo"
+    },
+    {
+        "id": 142,
+        "text": "Te ha dicho que 'no eres tú, es el tiempo'.",
+        "category": "amor"
+    },
+    {
+        "id": 143,
+        "text": "Tus padres prefieren a tu pareja que a ti.",
+        "category": "familia"
+    },
+    {
+        "id": 144,
+        "text": "Te ha dejado de hablar por una tontería.",
+        "category": "amistad"
+    },
+    {
+        "id": 145,
+        "text": "Te han quitado la cafetera de la oficina.",
+        "category": "trabajo"
+    },
+    {
+        "id": 146,
+        "text": "Te ha dicho que 'no quiere compromisos'.",
+        "category": "amor"
+    },
+    {
+        "id": 147,
+        "text": "¿Cuándo vas a tener un hijo?",
+        "category": "futuro"
+    },
+    {
+        "id": 148,
+        "text": "Te ha dejado de hablar por envidia.",
+        "category": "amistad"
+    },
+    {
+        "id": 149,
+        "text": "Te han puesto a trabajar en un sótano.",
+        "category": "trabajo"
+    },
+    {
+        "id": 150,
+        "text": "Te ha dicho que 'se aburrió de ti'.",
+        "category": "amor"
+    },
+    {
+        "id": 151,
+        "text": "Hacienda te ha enviado una notificación.",
+        "category": "dinero"
+    },
+    {
+        "id": 152,
+        "text": "Tienes el colesterol alto.",
+        "category": "salud"
+    },
+    {
+        "id": 153,
+        "text": "Los robots te van a quitar el trabajo.",
+        "category": "futuro"
+    },
+    {
+        "id": 154,
+        "text": "Se te ha caído el móvil a la pantalla.",
+        "category": "tecnología"
+    },
+    {
+        "id": 155,
+        "text": "Has perdido la cartera con todo el efectivo.",
+        "category": "dinero"
+    },
+    {
+        "id": 156,
+        "text": "Te duelen las rodillas cuando llueve.",
+        "category": "salud"
+    },
+    {
+        "id": 157,
+        "text": "No vas a tener pensión de jubilación.",
+        "category": "futuro"
+    },
+    {
+        "id": 158,
+        "text": "Tu cuenta de Netflix ha sido hackeada.",
+        "category": "tecnología"
+    },
+    {
+        "id": 159,
+        "text": "Te han cobrado comisión por descubierto.",
+        "category": "dinero"
+    },
+    {
+        "id": 160,
+        "text": "Te ha salido una cana.",
+        "category": "salud"
+    },
+    {
+        "id": 161,
+        "text": "El cambio climático arruinará tus vacaciones.",
+        "category": "futuro"
+    },
+    {
+        "id": 162,
+        "text": "Windows se está actualizando (20%).",
+        "category": "tecnología"
+    },
+    {
+        "id": 163,
+        "text": "El alquiler ha subido un 10%.",
+        "category": "dinero"
+    },
+    {
+        "id": 164,
+        "text": "Tienes que ir al dentista.",
+        "category": "salud"
+    },
+    {
+        "id": 165,
+        "text": "Nunca podrás comprarte una casa.",
+        "category": "futuro"
+    },
+    {
+        "id": 166,
+        "text": "Se te ha olvidado la contraseña del correo.",
+        "category": "tecnología"
+    },
+    {
+        "id": 167,
+        "text": "Te han cobrado la suscripción que olvidaste cancelar.",
+        "category": "dinero"
+    },
+    {
+        "id": 168,
+        "text": "Estás perdiendo visión.",
+        "category": "salud"
+    },
+    {
+        "id": 169,
+        "text": "Tus conocimientos quedarán obsoletos en 2 años.",
+        "category": "futuro"
+    },
+    {
+        "id": 170,
+        "text": "Tu impresora no detecta el cartucho nuevo.",
+        "category": "tecnología"
+    },
+    {
+        "id": 171,
+        "text": "Te ha tocado pagar la derrama de la comunidad.",
+        "category": "dinero"
+    },
+    {
+        "id": 172,
+        "text": "Te has resfriado justo antes del fin de semana.",
+        "category": "salud"
+    },
+    {
+        "id": 173,
+        "text": "La IA escribirá mejor código que tú.",
+        "category": "futuro"
+    },
+    {
+        "id": 174,
+        "text": "Se ha roto la pantalla de tu móvil nuevo.",
+        "category": "tecnología"
+    },
+    {
+        "id": 175,
+        "text": "La inflación se ha comido tus ahorros.",
+        "category": "dinero"
+    },
+    {
+        "id": 176,
+        "text": "Te duele la espalda por sentarte mal.",
+        "category": "salud"
+    },
+    {
+        "id": 177,
+        "text": "No vas a cumplir tus propósitos de año nuevo.",
+        "category": "futuro"
+    },
+    {
+        "id": 178,
+        "text": "El GPS te ha llevado por el camino más largo.",
+        "category": "tecnología"
+    },
+    {
+        "id": 179,
+        "text": "Te han puesto una multa de tráfico.",
+        "category": "dinero"
+    },
+    {
+        "id": 180,
+        "text": "Tienes ojeras permanentes.",
+        "category": "salud"
+    },
+    {
+        "id": 181,
+        "text": "Serás el viejo que grita a las nubes.",
+        "category": "futuro"
+    },
+    {
+        "id": 182,
+        "text": "Tu batería está al 1% y no tienes cargador.",
+        "category": "tecnología"
+    },
+    {
+        "id": 183,
+        "text": "Has perdido 50€ por la calle.",
+        "category": "dinero"
+    },
+    {
+        "id": 184,
+        "text": "Eres alérgico al polen.",
+        "category": "salud"
+    },
+    {
+        "id": 185,
+        "text": "El apocalipsis zombie es más probable que tu éxito.",
+        "category": "futuro"
+    },
+    {
+        "id": 186,
+        "text": "Se ha ido la luz y no habías guardado.",
+        "category": "tecnología"
+    },
+    {
+        "id": 187,
+        "text": "La reparación del coche cuesta 600€.",
+        "category": "dinero"
+    },
+    {
+        "id": 188,
+        "text": "Te han salido arrugas.",
+        "category": "salud"
+    },
+    {
+        "id": 189,
+        "text": "Nadie recordará tu nombre en 100 años.",
+        "category": "futuro"
+    },
+    {
+        "id": 190,
+        "text": "Tu internet va lento hoy.",
+        "category": "tecnología"
+    },
+    {
+        "id": 191,
+        "text": "Se te ha roto la lavadora.",
+        "category": "dinero"
+    },
+    {
+        "id": 192,
+        "text": "Te has mordido la lengua.",
+        "category": "salud"
+    },
+    {
+        "id": 193,
+        "text": "El mundo se va a acabar pronto.",
+        "category": "futuro"
+    },
+    {
+        "id": 194,
+        "text": "Has enviado el mensaje al grupo equivocado.",
+        "category": "tecnología"
+    },
+    {
+        "id": 195,
+        "text": "Te han cobrado dos veces en el restaurante.",
+        "category": "dinero"
+    },
+    {
+        "id": 196,
+        "text": "Te duele la cabeza.",
+        "category": "salud"
+    },
+    {
+        "id": 197,
+        "text": "Nunca viajarás a Marte.",
+        "category": "futuro"
+    },
+    {
+        "id": 198,
+        "text": "Se ha caído WhatsApp.",
+        "category": "tecnología"
+    },
+    {
+        "id": 199,
+        "text": "Has perdido la apuesta.",
+        "category": "dinero"
+    },
+    {
+        "id": 200,
+        "text": "Estás cansado todo el tiempo.",
+        "category": "salud"
+    }
+]
