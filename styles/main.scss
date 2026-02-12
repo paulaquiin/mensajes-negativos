@@ -893,6 +893,27 @@ dialog#edit-modal {
                     box-shadow: 0 0 0 3px rgba($primary-color, 0.1);
                 }
             }
+
+            #delete-message-container {
+                text-align: center;
+                margin: 1rem 0;
+
+                p {
+                    font-size: 1.1rem;
+                    color: $text-color;
+                    margin-bottom: 0.5rem;
+
+                    @at-root [data-theme="dark"] & {
+                        color: $white;
+                    }
+
+                    &.warning-text {
+                        font-size: 0.9rem;
+                        color: #e74c3c; // Red for warning
+                        font-weight: 600;
+                    }
+                }
+            }
         }
 
         .modal-footer {
@@ -929,103 +950,150 @@ dialog#edit-modal {
                     transform: translateY(-2px);
                     box-shadow: 0 4px 12px rgba($primary-color, 0.3);
                 }
+            }
 
-                // Multi-Selection and Bulk Actions
-                .message-card {
-                    cursor: pointer; // Indicate it's clickable
-                    border: 2px solid transparent; // Reserve space for border to avoid jump
-                    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            .btn-delete-confirm,
+            #modal-confirm-btn.btn-delete-confirm {
+                background-color: #e74c3c;
+                color: $white;
 
-                    &.selected {
-                        border-color: $primary-color;
-                        background-color: rgba($primary-color, 0.05);
-                        transform: scale(0.98);
-
-                        .card-header .tags-container::after {
-                            content: "\f00c"; // Check icon
-                            font-family: "Font Awesome 6 Free";
-                            font-weight: 900;
-                            color: $primary-color;
-                            margin-left: auto;
-                        }
-                    }
+                &:hover {
+                    background-color: #c0392b;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
                 }
 
-                .bulk-actions-bar {
-                    position: fixed;
-                    bottom: 2rem;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(150%); // Hidden by default
-                    background-color: $surface-color;
-                    padding: 1rem 2rem;
-                    border-radius: 50px;
-                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-                    display: flex;
-                    align-items: center;
-                    gap: 2rem;
-                    z-index: 900;
-                    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                    border: 1px solid $border-color;
 
-                    &.visible {
-                        transform: translateX(-50%) translateY(0);
-                    }
+            }
+        }
+    }
+}
 
-                    .selection-count {
-                        font-weight: 600;
-                        color: $text-color;
+// Multi-Selection and Bulk Actions (Root Level)
+.message-card {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 
-                        span {
-                            color: $primary-color;
-                            font-size: 1.2rem;
-                        }
-                    }
+    &.selected {
+        border-color: $primary-color;
+        background-color: rgba($primary-color, 0.05);
+        transform: scale(0.98);
 
-                    .bulk-actions {
-                        display: flex;
-                        gap: 1rem;
+        .card-header .tags-container::after {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: $primary-color;
+            margin-left: auto;
+        }
+    }
+}
 
-                        .bulk-btn {
-                            background: none;
-                            border: none;
-                            cursor: pointer;
-                            font-weight: 600;
-                            display: flex;
-                            align-items: center;
-                            gap: 0.5rem;
-                            padding: 0.5rem 1rem;
-                            border-radius: 20px;
-                            transition: background-color 0.2s;
+.bulk-actions-bar {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(150%);
+    background-color: $surface-color;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 900;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid $border-color;
+    width: auto;
+    max-width: 90%;
 
-                            &.btn-fav {
-                                color: #e74c3c; // Heart color
-                                background-color: rgba(231, 76, 60, 0.1);
+    &.visible {
+        transform: translateX(-50%) translateY(0);
+    }
 
-                                &:hover {
-                                    background-color: rgba(231, 76, 60, 0.2);
-                                }
-                            }
+    .selection-count {
+        font-weight: 600;
+        color: $text-color;
+        white-space: nowrap;
 
-                            &.btn-delete {
-                                color: $text-muted;
+        span {
+            color: $primary-color;
+            font-size: 1.2rem;
+        }
+    }
 
-                                &:hover {
-                                    color: #e74c3c;
-                                    background-color: rgba(231, 76, 60, 0.1);
-                                }
-                            }
+    .bulk-actions {
+        display: flex;
+        gap: 1rem;
 
-                            &.btn-clear {
-                                color: $text-muted;
-                                padding: 0.5rem;
+        .bulk-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: background-color 0.2s;
+            white-space: nowrap;
 
-                                &:hover {
-                                    background-color: rgba(0, 0, 0, 0.05);
-                                    color: $text-color;
-                                }
-                            }
-                        }
-                    }
+            &.btn-fav {
+                color: #e74c3c;
+                background-color: rgba(231, 76, 60, 0.1);
+
+                &:hover {
+                    background-color: rgba(231, 76, 60, 0.2);
+                }
+            }
+
+            &.btn-delete {
+                color: $text-muted;
+
+                &:hover {
+                    color: #e74c3c;
+                    background-color: rgba(231, 76, 60, 0.1);
+                }
+            }
+
+            &.btn-clear {
+                color: $text-muted;
+                padding: 0.5rem;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.05);
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    // Responsive Adjustments
+    @media (max-width: 600px) {
+        padding: 0.75rem 1.5rem;
+        gap: 1rem;
+        bottom: 1.5rem;
+        width: 95%; // Take more space on small screens
+        justify-content: space-between;
+
+        .selection-count {
+            font-size: 0.9rem;
+        }
+
+        .bulk-actions {
+            gap: 0.5rem;
+
+            .bulk-btn {
+                padding: 0.5rem; // Reduce padding
+
+                // Hide text labels, show icons only
+                font-size: 0; // Hide text
+
+                i {
+                    font-size: 1.2rem; // Keep icon visible
+                    margin: 0;
                 }
             }
         }

@@ -88,15 +88,19 @@
     <dialog id="edit-modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Editar Mensaje</h3>
+                <h3 id="modal-title">Editar Mensaje</h3>
                 <button class="close-modal-btn" onclick="closeEditModal()"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="modal-body">
                 <textarea id="edit-message-input" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+                <div id="delete-message-container" style="display: none;">
+                    <p>¿Estás seguro de que quieres eliminar este mensaje?</p>
+                    <p class="warning-text">Esta acción no se puede deshacer.</p>
+                </div>
             </div>
             <div class="modal-footer">
                 <button class="btn-cancel" onclick="closeEditModal()">Cancelar</button>
-                <button class="btn-save" onclick="saveEditMessage()">Guardar Cambios</button>
+                <button id="modal-confirm-btn" class="btn-save" onclick="handleModalConfirm()">Guardar Cambios</button>
             </div>
         </div>
     </dialog>

@@ -213,12 +213,28 @@ function addCustomMessage(text, categories) {
 }
 
 // Delete Custom Message
+// Delete Custom Message (Triggers Modal)
 function deleteCustomMessage(id) {
-    if (!confirm("¿Estás seguro de que quieres eliminar este mensaje? No podrás recuperarlo.")) return;
+    currentEditId = id;
+    currentModalMode = 'delete';
 
-    customMessages = customMessages.filter(msg => msg.id !== id);
-    localStorage.setItem('customMessages', JSON.stringify(customMessages));
-    resetAndRender();
+    // UI Updates for Delete Mode
+    const modalTitle = document.getElementById('modal-title');
+    const editInput = document.getElementById('edit-message-input');
+    const deleteContainer = document.getElementById('delete-message-container');
+    const confirmBtn = document.getElementById('modal-confirm-btn');
+
+    if (modalTitle) modalTitle.textContent = "Eliminar Mensaje";
+    if (editInput) editInput.style.display = 'none';
+    if (deleteContainer) deleteContainer.style.display = 'block';
+
+    if (confirmBtn) {
+        confirmBtn.textContent = "Eliminar";
+        confirmBtn.classList.remove('btn-save');
+        confirmBtn.classList.add('btn-delete-confirm');
+    }
+
+    if (editModal) editModal.showModal();
 }
 
 // Edit Custom Message
@@ -331,6 +347,7 @@ function createMessageCard(msg) {
     let deleteBtnHtml = '';
     if (msg.isCustom) {
         deleteBtnHtml = `
+            <button class="edit-btn" data-id="${msg.id}" title="Editar" onclick="event.stopPropagation(); editCustomMessage(${msg.id})"><i class="fa-solid fa-pen"></i></button>
             <button class="delete-btn" data-id="${msg.id}" title="Borrar" onclick="event.stopPropagation(); deleteCustomMessage(${msg.id})"><i class="fa-solid fa-trash"></i></button>
         `;
     }
@@ -405,15 +422,34 @@ if (!document.getElementById('dynamic-styles')) {
 const editModal = document.getElementById('edit-modal');
 const editMessageInput = document.getElementById('edit-message-input');
 let currentEditId = null;
+let currentModalMode = 'edit';
 
 // Expose to window to ensure global access
 window.editCustomMessage = function (id) {
     const msg = customMessages.find(m => m.id === id);
     if (msg) {
         currentEditId = id;
-        editMessageInput.value = msg.text;
-        editModal.showModal(); // Use Native Dialog API
-        editMessageInput.focus();
+        currentModalMode = 'edit';
+
+        // UI Updates for Edit Mode
+        const modalTitle = document.getElementById('modal-title');
+        const editInput = document.getElementById('edit-message-input');
+        const deleteContainer = document.getElementById('delete-message-container');
+        const confirmBtn = document.getElementById('modal-confirm-btn');
+
+        if (modalTitle) modalTitle.textContent = "Editar Mensaje";
+        if (editInput) editInput.style.display = 'block';
+        if (deleteContainer) deleteContainer.style.display = 'none';
+
+        if (confirmBtn) {
+            confirmBtn.textContent = "Guardar Cambios";
+            confirmBtn.classList.remove('btn-delete-confirm');
+            confirmBtn.classList.add('btn-save');
+        }
+
+        if (editInput) editInput.value = msg.text;
+        if (editModal) editModal.showModal(); // Use Native Dialog API
+        if (editInput) editInput.focus();
     }
 };
 
@@ -422,23 +458,38 @@ window.closeEditModal = function () {
     currentEditId = null;
 };
 
-window.saveEditMessage = function () {
+window.handleModalConfirm = function () {
     if (currentEditId === null) return;
 
-    const newText = editMessageInput.value.trim();
-    if (newText) {
-        const msgIndex = customMessages.findIndex(m => m.id === currentEditId);
-        if (msgIndex !== -1) {
-            customMessages[msgIndex].text = newText;
-            localStorage.setItem('customMessages', JSON.stringify(customMessages));
+    if (currentModalMode === 'delete') {
+        // Delete Logic
+        customMessages = customMessages.filter(msg => msg.id !== currentEditId);
+        localStorage.setItem('customMessages', JSON.stringify(customMessages));
 
-            // Re-render and maintain view
-            resetAndRender();
-
-            closeEditModal();
+        // Remove from favorites if present (cleanup)
+        if (favorites.includes(currentEditId)) {
+            favorites = favorites.filter(favId => favId !== currentEditId);
+            localStorage.setItem('favorites', JSON.stringify(favorites));
         }
+
+        resetAndRender();
+        closeEditModal();
+
     } else {
-        alert("El mensaje no puede estar vacío.");
+        // Edit Logic
+        const newText = editMessageInput.value.trim();
+        if (newText) {
+            const msgIndex = customMessages.findIndex(m => m.id === currentEditId);
+            if (msgIndex !== -1) {
+                customMessages[msgIndex].text = newText;
+                localStorage.setItem('customMessages', JSON.stringify(customMessages));
+
+                resetAndRender();
+                closeEditModal();
+            }
+        } else {
+            alert("El mensaje no puede estar vacío.");
+        }
     }
 };
 
